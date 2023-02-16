@@ -110,7 +110,6 @@ const Rightbar = ({ profile }) => {
           </div>
         </div>
         <img src="assets/shoes.gif" alt="" className="rightbarAd" />
-
       </>
     );
   };
