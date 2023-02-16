@@ -6,7 +6,7 @@ import Signup from "./pages/home/signup/Signup";
 function App() {
   return (
     <div>
-      <Home />
+      <Profile />
     </div>
   );
 }

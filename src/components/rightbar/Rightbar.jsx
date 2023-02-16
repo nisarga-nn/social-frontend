@@ -109,6 +109,8 @@ const Rightbar = ({ profile }) => {
             <span className="rightbarFollowingName">Jerry Magwire</span>
           </div>
         </div>
+        <img src="assets/shoes.gif" alt="" className="rightbarAd" />
+
       </>
     );
   };
