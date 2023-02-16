@@ -5,6 +5,9 @@ import Topbar from "../../../components/topbar/Topbar";
 import "./profile.css";
 
 const Profile = () => {
+
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+
   return (
     <>
       <Topbar />
@@ -14,12 +17,12 @@ const Profile = () => {
           <div className="profileRightTop">
             <div className="profileCover">
               <img
-                src="/assets/post/cycle.jpg"
+                src={`${PF}post/cycle.jpg`}
                 alt=""
                 className="profileCoverImg"
               />
               <img
-                src="/assets/person/5.jpeg"
+                src={`${PF}person/5.jpeg`}
                 alt=""
                 className="profileUserImg"
               />

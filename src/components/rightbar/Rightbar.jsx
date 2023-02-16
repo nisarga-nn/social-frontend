@@ -3,17 +3,19 @@ import { Users } from "../../dummyData";
 import Online from "../online/Online";
 
 const Rightbar = ({ profile }) => {
+  const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+
   const HomeRightbar = () => {
     return (
       <>
         <div className="birthdayContainer">
-          <img className="birthdayImg" src="assets/birthday.png" alt="" />
+          <img className="birthdayImg" src={`${PF}birthday.png`} alt="" />
           <span className="birthdayText">
             <b>Alex Foster</b> and <b>3 other friends</b> have their birthday
             today.
           </span>
         </div>
-        <img src="assets/iphone.gif" alt="" className="rightbarAd" />
+        <img src={`${PF}iphone.gif`} alt="" className="rightbarAd" />
         <h4 className="rightbarTitle">Online Friends</h4>
         <ul className="rightbarFriendList">
           {Users.map((u) => (
@@ -25,6 +27,8 @@ const Rightbar = ({ profile }) => {
   };
 
   const ProfileRightbar = () => {
+    const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+
     return (
       <>
         <h4 className="rightbarTitle">User Information</h4>
@@ -46,7 +50,7 @@ const Rightbar = ({ profile }) => {
         <div className="rightbarFollowings">
           <div className="rightbarFollowing">
             <img
-              src="assets/person/nisarga.jpg"
+              src={`${PF}person/nisarga.jpg`}
               alt=""
               className="rightbarFollowingImg"
             />
@@ -54,7 +58,7 @@ const Rightbar = ({ profile }) => {
           </div>
           <div className="rightbarFollowing">
             <img
-              src="assets/person/nisargacv.jpg"
+              src={`${PF}person/nisargacv.jpg`}
               alt=""
               className="rightbarFollowingImg"
             />
@@ -62,7 +66,7 @@ const Rightbar = ({ profile }) => {
           </div>
           <div className="rightbarFollowing">
             <img
-              src="assets/person/3.jpeg"
+              src={`${PF}person/3.jpeg`}
               alt=""
               className="rightbarFollowingImg"
             />
@@ -70,7 +74,7 @@ const Rightbar = ({ profile }) => {
           </div>
           <div className="rightbarFollowing">
             <img
-              src="assets/person/4.jpeg"
+              src={`${PF}person/4.jpeg`}
               alt=""
               className="rightbarFollowingImg"
             />
@@ -78,7 +82,7 @@ const Rightbar = ({ profile }) => {
           </div>
           <div className="rightbarFollowing">
             <img
-              src="assets/person/5.jpeg"
+              src={`${PF}person/5.jpeg`}
               alt=""
               className="rightbarFollowingImg"
             />
@@ -86,7 +90,7 @@ const Rightbar = ({ profile }) => {
           </div>
           <div className="rightbarFollowing">
             <img
-              src="assets/person/6.jpeg"
+              src={`${PF}person/6.jpeg`}
               alt=""
               className="rightbarFollowingImg"
             />
@@ -94,7 +98,7 @@ const Rightbar = ({ profile }) => {
           </div>
           <div className="rightbarFollowing">
             <img
-              src="assets/person/7.jpeg"
+              src={`${PF}person/7.jpeg`}
               alt=""
               className="rightbarFollowingImg"
             />
@@ -102,14 +106,14 @@ const Rightbar = ({ profile }) => {
           </div>
           <div className="rightbarFollowing">
             <img
-              src="assets/person/8.jpeg"
+              src={`${PF}person/8.jpeg`}
               alt=""
               className="rightbarFollowingImg"
             />
             <span className="rightbarFollowingName">Jerry Magwire</span>
           </div>
         </div>
-        <img src="assets/shoes.gif" alt="" className="rightbarAd" />
+        <img src={`${PF}shoes.gif`} alt="" className="rightbarAd" />
       </>
     );
   };
